@@ -1,11 +1,17 @@
 import "./App.css";
 import { NewsContextProvider } from "./component/news-app/NewsContext";
+import React, { useState } from "react";
 import News from "./component/news-app/News";
+import NavBar from "./component/news-app/NavBar";
+
 function App() {
   return (
-    <NewsContextProvider>
-      <News />
-    </NewsContextProvider>
+    <div>
+      <NewsContextProvider>
+        <NavBar />
+        <News />
+      </NewsContextProvider>
+    </div>
   );
 }
 
