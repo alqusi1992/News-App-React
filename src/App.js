@@ -1,11 +1,11 @@
 import "./App.css";
-import NewsContext from "./component/news-app/NewsContext";
-
+import { NewsContextProvider } from "./component/news-app/NewsContext";
+import News from "./component/news-app/News";
 function App() {
   return (
-    <div className="App">
-      <NewsContext />
-    </div>
+    <NewsContextProvider>
+      <News />
+    </NewsContextProvider>
   );
 }
 
