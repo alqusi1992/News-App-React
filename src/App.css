@@ -19,7 +19,7 @@ body {
 
 .nav img {
   cursor: pointer;
-  height: 70px;
+  height: 60px;
 }
 
 .content {
@@ -32,7 +32,7 @@ body {
   margin-left: -120px;
   border-radius: 10px;
   box-shadow: 0px 4px 32px 1px #00000029;
-
+  margin-top: 100px;
   background-color: #e9e1e1;
 }
 .content-img img {
@@ -68,9 +68,6 @@ body {
   width: 800px;
 }
 
-.news__author {
-}
-
 .news__published {
   color: red;
 }
@@ -82,4 +79,50 @@ body {
   color: #fff;
   background-color: rgb(54, 51, 51);
   border-radius: 5px;
+}
+
+/* Style the search field */
+.example {
+  position: relative;
+  left: 470px;
+}
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* weather */
+
+.hello {
+  position: absolute;
+  top: 100px;
+  left: 600px;
 }

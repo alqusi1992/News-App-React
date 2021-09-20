@@ -9,6 +9,7 @@ export const NewsContextProvider = (props) => {
   const value = {
     data,
     setCategory,
+    category,
   };
   const API = "57cb959843874702ad14bc7f36a70471";
   const fetchNewsData = async () => {
@@ -18,7 +19,6 @@ export const NewsContextProvider = (props) => {
       );
       const requestData = await response.json();
       setData(requestData.articles);
-      console.log(requestData);
     } catch (error) {
       console.log("Error", error);
     }

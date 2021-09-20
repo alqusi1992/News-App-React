@@ -11,6 +11,7 @@ function App() {
         <NavBar />
         <News />
       </NewsContextProvider>
+      <div className="hello">Click here to know the Weather</div>
     </div>
   );
 }
