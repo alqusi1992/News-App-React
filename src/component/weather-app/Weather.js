@@ -32,7 +32,7 @@ const Weather = () => {
 
   const backLinkStyle = {
     textDecoration: "none",
-    color: "black",
+    color: "white",
   };
   return (
     <div className="weather-app">
