@@ -10,13 +10,11 @@ const NavBar = () => {
     setQuery("");
     setCategory(query);
     validation();
-
-    // setCategory(console.log(search));
   };
 
   const validation = () => {
     if (query === "" || query.length < 3) {
-      alert("Please Enter The Data");
+      alert("No Data Has Been Entered");
     }
   };
   return (

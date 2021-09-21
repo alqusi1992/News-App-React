@@ -3,9 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: rgb(219, 184, 184);
-}
+
 .nav {
   height: 70px;
   box-shadow: 0px 1px 8px #888888;
@@ -20,6 +18,7 @@ body {
 .nav img {
   cursor: pointer;
   height: 60px;
+  margin-left: 190px;
 }
 
 .content {
@@ -33,7 +32,7 @@ body {
   border-radius: 10px;
   box-shadow: 0px 4px 32px 1px #00000029;
   margin-top: 100px;
-  background-color: #e9e1e1;
+  background-color: #fff;
 }
 .content-img img {
   width: 350px;
@@ -75,6 +74,7 @@ body {
 .news__url {
   position: relative;
   top: 10px;
+  left: 8px;
   text-decoration: none;
   color: #fff;
   background-color: rgb(54, 51, 51);
@@ -104,7 +104,7 @@ form.example button {
   color: white;
   font-size: 17px;
   border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
+  border-left: none;
   cursor: pointer;
 }
 
@@ -112,17 +112,127 @@ form.example button:hover {
   background: #0b7dda;
 }
 
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
+/* footer */
+
+.footer {
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  color: white;
+  margin-top: 90px;
+  height: 300px;
+}
+.name {
+  font-size: 1.4em;
+  padding: 30px;
+  color: white;
+  margin-top: 60px;
+}
+.name a,
+.icons a {
+  color: white;
+  text-decoration: none;
+}
+
+.icons {
+  width: 60%;
+  height: 50px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 60px;
 }
 
 /* weather */
-
-.hello {
+.container__weather {
   position: absolute;
   top: 100px;
-  left: 600px;
+  left: 500px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  background: linear-gradient(35deg, #136a8a, #26787198);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  width: 30%;
+  margin-right: 10px;
+  text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+  transition: all 0.9s ease-in-out;
+}
+
+.container__weather:hover {
+  background: #fff;
+  color: #136a8a;
+}
+
+.list {
+  border: 1px solid #000;
+  margin: 10px auto;
+  width: 390px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 40px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.list > p {
+  margin: 15px;
+  font-size: 1.1em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.btn {
+  background-color: #405e41;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 655px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.input__weather {
+  width: 23%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-left: 560px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+
+.enter__city {
+  margin-left: 590px;
+  padding: 10px;
+  color: rgb(202, 29, 29);
+}
+
+.back__home {
+  margin-left: 580px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.weather-app {
+  background: url("https://images.unsplash.com/photo-1579619572008-3fe9f19748ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80")
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
 }

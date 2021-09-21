@@ -6,12 +6,14 @@ export const NewsContextProvider = (props) => {
   const [data, setData] = useState([]);
   const [category, setCategory] = useState("general");
 
+  // const API_KEY = process.env.REACT_NEWS_APP_API_KEY;
+
   const value = {
     data,
     setCategory,
     category,
   };
-  const API = "57cb959843874702ad14bc7f36a70471";
+  const API = "9c3733b2527641a4aac4447732331e4a";
   const fetchNewsData = async () => {
     try {
       const response = await fetch(

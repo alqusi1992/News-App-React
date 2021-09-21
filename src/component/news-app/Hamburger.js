@@ -5,19 +5,14 @@ import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import categories from "../data/categories";
 
 export default function SwipeableTemporaryDrawer({ setCategory }) {
-  const [state, setState] = useState({
-    left: false,
-  });
+  const [state, setState] = useState({});
 
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
@@ -25,7 +20,7 @@ export default function SwipeableTemporaryDrawer({ setCategory }) {
     () =>
       createTheme({
         palette: {
-          mode: prefersDarkMode ? "dark" : "dark",
+          mode: prefersDarkMode ? "dark" : "light",
         },
       }),
     [prefersDarkMode]
